@@ -10,10 +10,10 @@ const PostList = ({posts, onDelete, onToggleImportant, onToggleLiked}) => {
         return (
             <li key ={id} className='list-group-item'>
                 <PostListItem
-                    {... itemProps}
-                    onDelete={() onDelete(id)}
+                    {...itemProps}
+                    onDelete={() => onDelete(id)}
                     onToggleImportant={()=> onToggleImportant(id)}
-                    onToggleLiked= {() => onToggleLiked(id)}/>
+                    onToggleLiked={() => onToggleLiked(id)}/>
             </li>
          )
     });

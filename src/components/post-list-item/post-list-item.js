@@ -17,7 +17,7 @@ export default class PostListItem extends Component {
         }
 
         return (
-            <div className={className}>
+            <div className={classNames}>
                 <span
                 className ="app-list-item-label"
                 onClick={onToggleLiked}>
@@ -40,5 +40,5 @@ export default class PostListItem extends Component {
                 </div>
             </div>
         )
-        }
+    }
 }
