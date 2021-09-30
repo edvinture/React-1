@@ -15,7 +15,7 @@ export default class App extends Component {
             data : [
                 {label: 'Going to learn React', important: true, like: false, id: 1},
                 {label: 'That is so good', important: false, like: false, id: 2},
-                {label: 'I need a break...', important: false, like: false, id: 3},
+                {label: 'I need a break...', important: false, like: false, id: 3}
             ],
             term: '',
             filter: 'all'
@@ -23,6 +23,7 @@ export default class App extends Component {
         this.deleteItem = this.deleteItem.bind(this);
         this.addItem = this.addItem.bind(this);
         this.onToggleImportant = this.onToggleImportant.bind(this);
+        this.onToggleLiked = this.onToggleLiked.bind(this);
         this.onUpdateSearch = this.onUpdateSearch.bind(this);
         this.onFilterSelect = this.onFilterSelect.bind(this);
         this.maxId = 4;
